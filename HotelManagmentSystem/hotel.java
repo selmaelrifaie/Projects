@@ -71,4 +71,16 @@ public class Hotel {
             }
             System.out.println("Reservation not found");
         }
+
+
+
+
+        public static void main(String[] args) {
+            Hotel hotel1= new Hotel("Hotel1", 5);
+            Room room1= new Room("mohamed", 1, 2, 100, 3);
+            
+            hotel1.addReservation(room1);
+            hotel1.getAvgDays();
+            System.out.println(hotel1.printRentalList());
+        }
 }
